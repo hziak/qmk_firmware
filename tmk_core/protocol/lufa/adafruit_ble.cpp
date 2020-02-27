@@ -542,7 +542,7 @@ bool adafruit_ble_enable_keyboard(void) {
     static const char kATZ[] PROGMEM = "ATZ";
 
     // Turn down the power level a bit
-    static const char  kPower[] PROGMEM             = "AT+BLEPOWERLEVEL=-12";
+    static const char  kPower[] PROGMEM             = "AT+BLEPOWERLEVEL=-40";
     static PGM_P const configure_commands[] PROGMEM = {
         kEcho, kGapIntervals, kGapDevName, kHidEnOn, kPower, kATZ,
     };
